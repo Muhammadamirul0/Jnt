@@ -87,7 +87,6 @@
             </div>
         </header>
 
-
         <div class="relative isolate px-6 pt-14 lg:px-8">
             <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
                 aria-hidden="true">
@@ -124,35 +123,44 @@
                     style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
                 </div>
             </div>
+            <div class="relative w-full max-w-4xl mx-auto overflow-hidden">
+                <!-- Slides -->
+                <div id="carousel" class="flex transition-transform duration-700">
+                    <div
+                        class="min-w-full bg-blue-500 text-white flex items-center justify-center h-64 sm:h-72 md:h-80 lg:h-96">
+                        <h1 class="text-2xl sm:text-3xl md:text-4xl">Slide 1</h1>
+                    </div>
+                    <div
+                        class="min-w-full bg-red-500 text-white flex items-center justify-center h-64 sm:h-72 md:h-80 lg:h-96">
+                        <h1 class="text-2xl sm:text-3xl md:text-4xl">Slide 2</h1>
+                    </div>
+                    <div
+                        class="min-w-full bg-green-500 text-white flex items-center justify-center h-64 sm:h-72 md:h-80 lg:h-96">
+                        <h1 class="text-2xl sm:text-3xl md:text-4xl">Slide 3</h1>
+                    </div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <button id="prev"
+                    class="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600">
+                    &larr;
+                </button>
+                <button id="next"
+                    class="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full hover:bg-gray-600">
+                    &rarr;
+                </button>
+
+                <!-- Indicators -->
+                <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                    <button class="w-3 h-3 bg-gray-400 rounded-full hover:bg-gray-600" data-slide="0"></button>
+                    <button class="w-3 h-3 bg-gray-400 rounded-full hover:bg-gray-600" data-slide="1"></button>
+                    <button class="w-3 h-3 bg-gray-400 rounded-full hover:bg-gray-600" data-slide="2"></button>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script>
-        const menuButton = document.getElementById('menuButton');
-        const closeMenuButton = document.getElementById('closeMenu');
-        const menuOverlay = document.getElementById('menuOverlay');
-        const backdrop = document.getElementById('backdrop');
-
-        // Fungsi untuk membuka menu
-        const openMenu = () => {
-            menuOverlay.classList.remove('hidden');
-        };
-
-        // Fungsi untuk menutup menu
-        const closeMenu = () => {
-            menuOverlay.classList.add('hidden');
-        };
-
-        // Event Listener untuk tombol hamburger
-        menuButton.addEventListener('click', openMenu);
-
-        // Event Listener untuk tombol close
-        closeMenuButton.addEventListener('click', closeMenu);
-
-        // Event Listener untuk backdrop (jika diklik, tutup menu)
-        backdrop.addEventListener('click', closeMenu);
-    </script>
-
+    <script src="src/script.js"></script>
 </body>
 
 </html>

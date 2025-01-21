@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .text-stroke {
+        -webkit-text-stroke: 4px rgb(3, 117, 20);
+        /* Stroke warna hitam */
+        color: white;
+        /* Membuat teks hanya berupa outline */
+    }
+}

@@ -1,0 +1,26 @@
+    
+    Bento Layout
+    <div class="py-6">
+        <!-- Grid Bento -->
+        <div class="grid grid-cols-6 gap-4 p-6 bg-gray-950 rounded-3xl">
+            <!-- Item 1 -->
+            <div class="col-span-6 md:col-span-4 h-48 bg-white rounded-lg">
+                <!-- Isi konten di sini -->
+                <img src="img/Logo J&T Cargo@0.5x.png" alt="" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <!-- Item 2 -->
+            <div class="col-span-6 md:col-span-2 h-48 bg-green-500 rounded-lg">
+                <!-- Isi konten di sini -->
+            </div>
+            <!-- Item 3 -->
+            <div class="col-span-6 md:col-span-2 h-auto rounded-lg">
+                <!-- Isi konten di sini -->
+                <img src="img/1691745535_jnt-cargo-kabar.jpg" alt="" class="w-full h-full object-cover rounded-lg">
+            </div>
+            <!-- Item 4 -->
+            <div class=" col-span-6 md:col-span-4 h-auto bg-orange-600 rounded-lg">
+                <!-- Isi konten di sini -->
+                <!-- <img src="img/" alt="" class="w-full h-full object-cover rounded-lg"> -->
+            </div>
+        </div>
+    </div>
